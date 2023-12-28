@@ -5,7 +5,7 @@ import openai
 app = Flask(__name__)
 
 # Set your OpenAI API key here. Remember to keep it secure.
-openai.api_key = ""  # Replace with your actual API key
+openai.api_key = '' # Replace with your actual API key
 
 def get_openai_response(prompt, model="gpt-4-1106-preview", temperature=0.7):
     response = openai.ChatCompletion.create(
