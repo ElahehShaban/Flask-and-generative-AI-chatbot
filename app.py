@@ -11,9 +11,10 @@ app = Flask(__name__)
 # Replace with your actual OpenAI API key
 openai.api_key =''  # Replace with your actual API key
 
-def get_openai_response(prompt, model="text-davinci-004", temperature=0.7):
+def get_openai_response(prompt):
     response = openai.ChatCompletion.create(
         model="gpt-4-1106-preview",  # The chat model identifier
+        temperature=0.7, 
         messages=[
             {"role": "system", "content": "You are a knowledgeable assistant."},
             {"role": "user", "content": prompt}
