@@ -33,6 +33,37 @@ body {
     box-sizing: border-box;
 }
 
+.input-area {
+    display: flex;
+    align-items: center;
+    border: 2px solid #007bff;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.input-field {
+    flex-grow: 1;
+    border: none;
+    padding-left: 10px;
+    outline: none;
+}
+
+.file-input {
+    display: none; /* Hide the actual file input */
+}
+
+.file-attach-icon {
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 24px;
+    order: -1; /* Place the icon on the left */
+    display: flex;
+    align-items: center;
+}
+
+
 .send-button {
     width: 20%;
     background: #007bff;
@@ -67,7 +98,11 @@ body {
     background-color: #ececec;
     align-self: flex-start;
 }
-
+.file-name {
+    margin-left: 10px;
+    color: #555;
+    font-size: 14px;
+}
 
 /* Responsive Design */
 @media (max-width: 600px) {
